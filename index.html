@@ -1,0 +1,598 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakshitha M R | Aspiring DevOps Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+overflow-x:hidden;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+font-size:2.5rem;
+text-align:center;
+margin-bottom:50px;
+color:#38bdf8;
+}
+
+.hero{
+min-height:100vh;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+padding:30px 10%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding-bottom:40px;
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:700;
+color:#38bdf8;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.navbar a:hover{
+color:#38bdf8;
+}
+
+.hero-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:50px;
+}
+
+.hero-left{
+flex:1;
+}
+
+.badge{
+display:inline-block;
+background:#1e40af;
+padding:10px 20px;
+border-radius:30px;
+margin-bottom:20px;
+}
+
+.hero-left h1{
+font-size:4rem;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-left h1 span{
+color:#38bdf8;
+}
+
+.hero-left p{
+font-size:1.1rem;
+line-height:1.8;
+color:#cbd5e1;
+}
+
+.hero-buttons{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+margin-right:15px;
+transition:.3s;
+}
+
+.primary{
+background:#38bdf8;
+color:black;
+}
+
+.secondary{
+border:2px solid #38bdf8;
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.tech-stack{
+margin-top:30px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.tech-stack span{
+background:#1e293b;
+padding:10px 15px;
+border-radius:20px;
+}
+
+.profile-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+text-align:center;
+width:320px;
+}
+
+.profile-card img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:4px solid #38bdf8;
+object-fit:cover;
+}
+
+.profile-card h3{
+margin-top:20px;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+margin-top:20px;
+}
+
+.stats h4{
+color:#38bdf8;
+}
+
+.hero-cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:60px;
+}
+
+.hero-card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.hero-card:hover{
+transform:translateY(-8px);
+}
+
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+font-size:1.1rem;
+line-height:2;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-5px);
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-8px);
+}
+
+.project h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.project p{
+color:#cbd5e1;
+line-height:1.8;
+}
+
+.roadmap{
+text-align:center;
+font-size:1.4rem;
+line-height:2.2;
+}
+
+.certs{
+display:flex;
+flex-direction:column;
+gap:20px;
+max-width:700px;
+margin:auto;
+}
+
+.cert{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.contact{
+text-align:center;
+line-height:2.2;
+font-size:1.1rem;
+}
+
+footer{
+background:#020617;
+padding:20px;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+
+.hero-content{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-cards{
+grid-template-columns:1fr;
+}
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero-left h1{
+font-size:2.8rem;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+<nav class="navbar">
+<div class="logo">Rakshitha M R</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+<span class="badge">🚀 Aspiring DevOps Engineer</span>
+
+<h1>
+Building My Career In
+<span>DevOps & Cloud Computing</span>
+</h1>
+
+<p>
+Computer Science Graduate passionate about Cloud Computing,
+Automation, CI/CD, Monitoring and Infrastructure Management.
+
+Currently building practical experience using AWS, Docker,
+Kubernetes, Jenkins, Linux and Spring Boot deployments.
+</p>
+
+<div class="hero-buttons">
+<a href="#projects" class="btn primary">View Projects</a>
+<a href="#contact" class="btn secondary">Contact Me</a>
+</div>
+
+<div class="tech-stack">
+<span>AWS</span>
+<span>Docker</span>
+<span>Kubernetes</span>
+<span>Jenkins</span>
+<span>Linux</span>
+<span>Git</span>
+<span>Prometheus</span>
+<span>Grafana</span>
+</div>
+
+</div>
+
+<div class="profile-card">
+
+<img src="profile.jpg" alt="Profile">
+
+<h3>Rakshitha M R</h3>
+
+<p>DevOps Intern</p>
+
+<div class="stats">
+<div>
+<h4>4+</h4>
+<p>Projects</p>
+</div>
+
+<div>
+<h4>10+</h4>
+<p>Tools</p>
+</div>
+
+<div>
+<h4>AWS</h4>
+<p>Cloud</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-cards">
+
+<div class="hero-card">
+<h3>CI/CD</h3>
+<p>Jenkins + Maven + Docker Pipelines</p>
+</div>
+
+<div class="hero-card">
+<h3>Cloud</h3>
+<p>AWS EC2, S3, VPC and RDS</p>
+</div>
+
+<div class="hero-card">
+<h3>Containers</h3>
+<p>Docker & Kubernetes Deployments</p>
+</div>
+
+<div class="hero-card">
+<h3>Monitoring</h3>
+<p>Prometheus, Grafana & cAdvisor</p>
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+I am a Computer Science and Engineering graduate passionate about
+DevOps practices, Cloud Computing and Automation.
+
+I have gained hands-on experience through internship projects involving
+AWS cloud deployments, Jenkins CI/CD pipelines, Docker containerization,
+Kubernetes orchestration and application monitoring.
+
+My goal is to start my professional journey as a DevOps Engineer and
+contribute to building scalable and reliable software delivery systems.
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>Cloud</h3>
+AWS EC2, S3, VPC, RDS
+</div>
+
+<div class="skill">
+<h3>DevOps</h3>
+Git, GitHub, Jenkins, Maven, Docker, Kubernetes
+</div>
+
+<div class="skill">
+<h3>Monitoring</h3>
+Prometheus, Grafana, cAdvisor, Micrometer
+</div>
+
+<div class="skill">
+<h3>Programming</h3>
+Java, SQL, Python Basics
+</div>
+
+<div class="skill">
+<h3>Backend</h3>
+Spring Boot, REST APIs
+</div>
+
+<div class="skill">
+<h3>Operating System</h3>
+Linux (Ubuntu), Shell Scripting
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Spring Boot API Monitoring Dashboard</h3>
+<p>
+Built a monitoring dashboard for Spring Boot APIs using
+Actuator, Micrometer, Prometheus and Grafana to visualize
+application metrics, health status and performance trends.
+</p>
+</div>
+
+<div class="project">
+<h3>UPI ID Fraud Detection Using Machine Learning</h3>
+<p>
+Developed a machine learning model using Support Vector Machine (SVM)
+to identify suspicious UPI transactions and improve fraud detection accuracy.
+</p>
+</div>
+
+<div class="project">
+<h3>CI/CD Pipeline for Spring Boot Application</h3>
+<p>
+Implemented a CI/CD pipeline using Jenkins, Maven, Docker and GitHub.
+Automated build, image creation and deployment processes.
+</p>
+</div>
+
+<div class="project">
+<h3>AWS Two-Tier Deployment Architecture</h3>
+<p>
+Designed a secure application architecture with application server
+in a public subnet and database server in a private subnet.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>DevOps Learning Journey</h2>
+
+<div class="roadmap">
+
+Java<br>
+↓<br>
+Spring Boot<br>
+↓<br>
+Git & GitHub<br>
+↓<br>
+Maven<br>
+↓<br>
+Docker<br>
+↓<br>
+Jenkins<br>
+↓<br>
+AWS<br>
+↓<br>
+Kubernetes<br>
+↓<br>
+Prometheus & Grafana
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Certifications</h2>
+
+<div class="certs">
+
+<div class="cert">
+NPTEL - Data Structures and Algorithms Using Java
+</div>
+
+<div class="cert">
+NPTEL - Big Data Computing
+</div>
+
+<div class="cert">
+DevOps Internship Certificate
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+📧 rakshithamr10@gmail.com<br>
+
+💻 GitHub: github.com/Rakshitha1004<br>
+
+🔗 LinkedIn: linkedin.com/in/rakshitha-m-r-a49ba729b
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Rakshitha M R | Aspiring DevOps Engineer
+</footer>
+
+</body>
+</html>
+```
